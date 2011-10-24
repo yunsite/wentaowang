@@ -1,0 +1,17 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<volist name="list" id="vo">
+	  <tr>
+	  <td></td>
+		<td style="border-bottom:1px dotted silver">书名：<a href="__APP__/product/index?product={$vo.book_id}">{$vo.book_name}</a></td> 
+		<td><span style="color:gray">作者：{$vo.author}</span></td>
+		<td><span style="color:gray">isbn：{$vo.isbn}</span></td>
+		<td><span style="color:gray">内容简介：{$vo.plot_summary}</span></td><td>
+		<span style="color:gray">作者简介：{$vo.author_summary}</span></td>
+	  </tr>
+	  <tr >
+	  <td></td>
+		<td><div class="content">{$page}</div></td>
+	  </tr>
+</volist>
+<include file="Public:footer" />
