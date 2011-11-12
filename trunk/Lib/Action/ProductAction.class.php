@@ -8,7 +8,12 @@
 			$Book = M("Book");
 			
 			$product['book_id']=isset($_GET['product'])?$_GET['product']:0;
-		
+			
+			if($product['book_id']==0){
+			
+				$this->error();
+			}
+			
 			// 当前页数据查询
 			$list = $Book->where($product)->find();
 			
@@ -16,11 +21,11 @@
 			
 			$message=$this->show($product);
 			
-			$this->assign('message',$message);
-			
 			$this->assign('list', $list);
+			
+			$this->assign('message',$message);
 
-			$this->display();
+			$this->display('index');
 		}
 		
 		// 添加标签
@@ -70,15 +75,31 @@
 		}
 		
 		//Mshow 显示留言
-		public function show($product){
-		
-			$Message=M('leave_message_book');
+		public function show(){
+			
+			$mess; 
+			
+			$product['book_id']=isset($_GET['product'])?$_GET['product']:0;
+			
+			$Message=M('leave_message_book');//message  对书本的评论
 			
 			$message=$Message->where($product)->select();
 			
-			return $message;
+			$User=M('user');//用户信息
 			
+			foreach($message as $vo){
+				
+			 $userId['user_id']=$vo['user_id'];//获取评论会员id
+				
+				$user=$User->where($userId)->select();
+			
+				$vo['user_id']=$user[0]['user_name'];
+				
+				$mess[]=$vo;
+			}
+			return $mess;
 		}
+		
 		//Tadd 添加标签
 		public function Tadd(){
 		
@@ -121,6 +142,13 @@
 			
 	//		$Collect->add($data);
 		
+		}
+		
+		public function error(){
+		echo __URL__;
+			header('Location: __URL__');
+			
+			break;
 		}
 		
 	}

@@ -82,7 +82,7 @@
 	
 	<?php if(is_array($message)): $i = 0; $__LIST__ = $message;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): ++$i;$mod = ($i % 2 )?><tr>
 	
-		<td><?php echo ($vo["message"]); ?><td><a href="#">有用</a><a href="#">没用</a>
+		<td><?php echo ($vo["user_id"]); ?></td><td><?php echo ($vo["message"]); ?><td><a href="#">有用</a><a href="#">没用</a>
 	
 	</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
