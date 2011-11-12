@@ -1,0 +1,10 @@
+[ 2011-11-12T10:56:17+08:00 ] NOTIC: [8] Undefined variable: list 0573c70d8602d961e53f714ea77bd87c.php 第 31 行.
+[ 2011-11-12T10:56:17+08:00 ] NOTIC: [8] Undefined variable: page 0573c70d8602d961e53f714ea77bd87c.php 第 40 行.
+[ 2011-11-12T11:26:05+08:00 ] NOTIC: [8] Undefined variable: list 0573c70d8602d961e53f714ea77bd87c.php 第 31 行.
+[ 2011-11-12T11:26:05+08:00 ] NOTIC: [8] Undefined variable: page 0573c70d8602d961e53f714ea77bd87c.php 第 40 行.
+[ 2011-11-12T11:34:33+08:00 ] NOTIC: [8] Undefined variable: list 0573c70d8602d961e53f714ea77bd87c.php 第 31 行.
+[ 2011-11-12T11:34:33+08:00 ] NOTIC: [8] Undefined variable: page 0573c70d8602d961e53f714ea77bd87c.php 第 40 行.
+[ 2011-11-12T11:34:41+08:00 ] ERR: (ThinkException) 无法加载模块__URL__
+[ 2011-11-12T11:34:42+08:00 ] ERR: (ThinkException) 无法加载模块__URL__
+[ 2011-11-12T11:35:04+08:00 ] ERR: (ThinkException) 无法加载模块__URL__
+[ 2011-11-12T11:35:04+08:00 ] ERR: (ThinkException) 无法加载模块__URL__
