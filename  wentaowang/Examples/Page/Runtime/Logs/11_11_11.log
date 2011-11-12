@@ -1,3 +1,0 @@
-[ 2011-11-11T20:33:03+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.126975s ]
-[ 2011-11-11T20:33:03+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `think_form` LIMIT 1  [ RunTime:0.000408s ]
-[ 2011-11-11T20:33:03+08:00 ] SQL: SELECT * FROM `think_form` ORDER BY id desc LIMIT 0,5  [ RunTime:0.073097s ]

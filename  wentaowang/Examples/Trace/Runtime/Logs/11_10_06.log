@@ -1,4 +1,0 @@
-[ 2011-10-06T11:35:58+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.007131s ]
-[ 2011-10-06T11:35:58+08:00 ] SQL: SELECT id,title FROM `think_form` ORDER BY id desc LIMIT 0,6  [ RunTime:0.001778s ]
-[ 2011-10-06T11:35:58+08:00 ] SQL: SELECT * FROM `think_form` LIMIT 1  [ RunTime:0.000818s ]
-[ 2011-10-06T11:35:58+08:00 ] SQL: SELECT id,title FROM `think_form` ORDER BY id desc LIMIT 3  [ RunTime:0.001315s ]
